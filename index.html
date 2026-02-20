@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HERS | Elegant Essentials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#">HERS</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#new">New In</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+      <button id="cart-button" class="cart-button" aria-label="Open cart">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="new" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Own your glow</p>
+          <h1>Minimal luxury for everyday confidence.</h1>
+          <p class="hero-copy">HERS curates essentials designed to elevate your routine — clean silhouettes, premium fabrics, and timeless tones.</p>
+          <a class="primary-button" href="#shop">Shop Collection</a>
+        </div>
+        <div class="hero-card">
+          <h3>Spring Drop</h3>
+          <p>Use code <strong>HERS10</strong> for 10% off your first order.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="products-section container">
+      <div class="section-head">
+        <h2>Best Sellers</h2>
+        <p>Curated pieces customers love most.</p>
+      </div>
+      <div id="products" class="products-grid"></div>
+    </section>
+
+    <section id="story" class="story-section">
+      <div class="container story-grid">
+        <div>
+          <h2>Built for modern women</h2>
+          <p>At HERS, we believe style should feel effortless. Every product is selected to mix beautifully, last longer, and move with your life.</p>
+        </div>
+        <ul>
+          <li>✓ Sustainable packaging</li>
+          <li>✓ Fast worldwide shipping</li>
+          <li>✓ 30-day returns</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter container">
+      <h2>Stay in the loop</h2>
+      <p>Get launch alerts, style edits, and exclusive discounts.</p>
+      <form id="newsletter-form">
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button type="submit">Join</button>
+      </form>
+      <p id="newsletter-message" class="newsletter-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> HERS. All rights reserved.</p>
+      <p>Made with intention.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
